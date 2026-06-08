@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MTH — Micro Telemedicine Healthcare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-orb bg-orb--3"></div>
+  <div class="bg-grid"></div>
+
+  <div class="app-wrapper">
+
+    <!-- LEFT PANEL -->
+    <aside class="hero-panel">
+      <div class="hero-inner">
+        <div class="brand">
+          <div class="brand-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="12" fill="white" fill-opacity="0.15"/>
+              <path d="M20 8v24M8 20h24" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="5" fill="white" fill-opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">MTH</span>
+            <span class="brand-sub">Micro Telemedicine Healthcare</span>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <h1 class="hero-title">Layanan Kesehatan<br/><em>Lebih Dekat,</em><br/>Lebih Mudah.</h1>
+          <p class="hero-desc">Platform telemedicine terpadu untuk Kabupaten Lombok Utara. Konsultasi dokter, pemantauan kesehatan, dan rekam medis elektronik — semua dalam satu aplikasi.</p>
+          <div class="hero-stats">
+            <div class="stat-item"><span class="stat-num">9</span><span class="stat-label">Fasilitas Kesehatan</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat-item"><span class="stat-num">5</span><span class="stat-label">Kecamatan</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat-item"><span class="stat-num">24/7</span><span class="stat-label">Layanan Online</span></div>
+          </div>
+        </div>
+
+        <div class="hero-pills">
+          <span class="pill">🩺 Teleconsultation</span>
+          <span class="pill">📋 Rekam Medis</span>
+          <span class="pill">📅 Booking Jadwal</span>
+          <span class="pill">📊 Monitoring</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT PANEL -->
+    <main class="form-panel">
+      <div class="form-container">
+
+        <!-- Mobile brand -->
+        <div class="mobile-brand">
+          <div class="brand-icon brand-icon--sm">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="12" fill="var(--teal-500)" fill-opacity="0.15"/>
+              <path d="M20 8v24M8 20h24" stroke="var(--teal-600)" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="5" fill="var(--teal-500)" fill-opacity="0.3"/>
+            </svg>
+          </div>
+          <span class="brand-name brand-name--dark">MTH</span>
+        </div>
+
+        <!-- TAB SWITCHER -->
+        <div class="tab-switcher" role="tablist">
+          <button class="tab-btn active" data-tab="login" role="tab" aria-selected="true">Masuk</button>
+          <button class="tab-btn" data-tab="register" role="tab" aria-selected="false">Daftar Pasien</button>
+          <div class="tab-indicator"></div>
+        </div>
+
+        <!-- ===== LOGIN FORM ===== -->
+        <div class="form-section active" id="tab-login">
+          <div class="form-header">
+            <h2>Selamat Datang</h2>
+            <p>Masuk ke akun MTH Anda</p>
+          </div>
+
+          <!-- Demo hint -->
+          <div class="demo-hint" id="demo-hint">
+            <button class="demo-hint-toggle" id="demo-hint-toggle">
+              <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/><path d="M8 7v5M8 5.5v-.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+              Akun Demo
+              <svg class="chevron" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </button>
+            <div class="demo-accounts" id="demo-accounts">
+              <button class="demo-acc-btn" data-email="pasien1@gmail.com" data-pass="Pw123">
+                <span class="demo-role-dot pasien"></span>
+                <span class="demo-info"><strong>Pasien 1</strong><span>pasien1@gmail.com · Pw123</span></span>
+                <span class="demo-fill">Isi otomatis →</span>
+              </button>
+              <button class="demo-acc-btn" data-email="pasien2@gmail.com" data-pass="Pw123">
+                <span class="demo-role-dot pasien"></span>
+                <span class="demo-info"><strong>Pasien 2</strong><span>pasien2@gmail.com · Pw123</span></span>
+                <span class="demo-fill">Isi otomatis →</span>
+              </button>
+              <button class="demo-acc-btn" data-email="dokter1@gmail.com" data-pass="Dok123">
+                <span class="demo-role-dot dokter"></span>
+                <span class="demo-info"><strong>Dokter A</strong><span>dokter1@gmail.com · Dok123</span></span>
+                <span class="demo-fill">Isi otomatis →</span>
+              </button>
+              <button class="demo-acc-btn" data-email="dokter2@gmail.com" data-pass="Dok123">
+                <span class="demo-role-dot dokter"></span>
+                <span class="demo-info"><strong>Dokter B</strong><span>dokter2@gmail.com · Dok123</span></span>
+                <span class="demo-fill">Isi otomatis →</span>
+              </button>
+              <button class="demo-acc-btn" data-email="admin@mth.id" data-pass="Admin123">
+                <span class="demo-role-dot admin"></span>
+                <span class="demo-info"><strong>Admin</strong><span>admin@mth.id · Admin123</span></span>
+                <span class="demo-fill">Isi otomatis →</span>
+              </button>
+            </div>
+          </div>
+
+          <form id="login-form" novalidate>
+            <div class="field-group">
+              <label for="login-email">Email</label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg viewBox="0 0 20 20" fill="none"><path d="M2.5 5.5l7.5 5 7.5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="1.5" y="4" width="17" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+                </span>
+                <input type="email" id="login-email" name="email" placeholder="nama@email.com" autocomplete="email" required />
+              </div>
+              <span class="field-error" id="login-email-err"></span>
+            </div>
+
+            <div class="field-group">
+              <label for="login-password">Kata Sandi</label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg viewBox="0 0 20 20" fill="none"><rect x="4" y="9" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 9V6a3 3 0 116 0v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <input type="password" id="login-password" name="password" placeholder="Masukkan kata sandi" autocomplete="current-password" required />
+                <button type="button" class="toggle-pass" data-target="login-password" aria-label="Tampilkan kata sandi">
+                  <svg class="eye-show" viewBox="0 0 20 20" fill="none"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                  <svg class="eye-hide" viewBox="0 0 20 20" fill="none" style="display:none"><path d="M3 3l14 14M8.5 8.5A2.5 2.5 0 0112 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 10s3.5-6 9-6c1.5 0 2.9.4 4 1M19 10s-1.5 2.5-4 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+              <span class="field-error" id="login-pass-err"></span>
+            </div>
+
+            <div class="form-row form-row--between">
+              <label class="checkbox-label">
+                <input type="checkbox" id="remember-me" />
+                <span class="checkmark"></span>
+                Ingat saya
+              </label>
+              <a href="#" class="link-text">Lupa kata sandi?</a>
+            </div>
+
+            <button type="submit" class="btn-primary">
+              <span class="btn-text">Masuk</span>
+              <span class="btn-loader" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <p class="form-footer-text">Belum punya akun? <a href="#" class="link-text" data-switch="register">Daftar sebagai Pasien</a></p>
+          <p class="form-footer-text" style="margin-top:.4rem;font-size:.76rem;color:var(--slate-400)">Akun Dokter dibuat oleh Administrator</p>
+        </div>
+
+        <!-- ===== REGISTER FORM (Pasien only) ===== -->
+        <div class="form-section" id="tab-register">
+          <div class="form-header">
+            <h2>Daftar Akun Pasien</h2>
+            <p>Isi data diri Anda untuk mendaftar</p>
+          </div>
+
+          <form id="register-form" novalidate>
+
+            <div class="field-row">
+              <div class="field-group">
+                <label for="reg-firstname">Nama Depan</label>
+                <div class="input-wrap">
+                  <input type="text" id="reg-firstname" placeholder="Ahmad" required />
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="reg-lastname">Nama Belakang</label>
+                <div class="input-wrap">
+                  <input type="text" id="reg-lastname" placeholder="Fauzan" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="reg-email">Email</label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg viewBox="0 0 20 20" fill="none"><path d="M2.5 5.5l7.5 5 7.5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="1.5" y="4" width="17" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+                </span>
+                <input type="email" id="reg-email" placeholder="nama@email.com" required />
+              </div>
+              <span class="field-error" id="reg-email-err"></span>
+            </div>
+
+            <div class="field-group">
+              <label for="reg-phone">Nomor Telepon</label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg viewBox="0 0 20 20" fill="none"><path d="M4 2h3l1.5 4-2 1a11 11 0 005.5 5.5l1-2 4 1.5V15a2 2 0 01-2 2C7.16 17 3 12.84 3 8a2 2 0 012-2h-.5L4 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <input type="tel" id="reg-phone" placeholder="08xxxxxxxxxx" required />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-group">
+                <label for="reg-nik">NIK</label>
+                <div class="input-wrap">
+                  <input type="text" id="reg-nik" placeholder="16 digit NIK" maxlength="16" />
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="reg-dob">Tanggal Lahir</label>
+                <div class="input-wrap">
+                  <input type="date" id="reg-dob" />
+                </div>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="reg-puskesmas">Puskesmas Terdekat</label>
+              <div class="input-wrap input-wrap--select">
+                <span class="input-icon">
+                  <svg viewBox="0 0 20 20" fill="none"><path d="M10 2C7.24 2 5 4.24 5 7c0 4 5 11 5 11s5-7 5-11c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="7" r="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                </span>
+                <select id="reg-puskesmas">
+                  <option value="">Pilih puskesmas...</option>
+                  <optgroup label="Kec. Pemenang">
+                    <option>Puskesmas Pemenang</option>
+                    <option>Puskesmas Nipah</option>
+                  </optgroup>
+                  <optgroup label="Kec. Tanjung">
+                    <option>Puskesmas Tanjung</option>
+                  </optgroup>
+                  <optgroup label="Kec. Gangga">
+                    <option>Puskesmas Gangga</option>
+                  </optgroup>
+                  <optgroup label="Kec. Kayangan">
+                    <option>Puskesmas Kayangan</option>
+                    <option>Puskesmas Santong</option>
+                  </optgroup>
+                  <optgroup label="Kec. Bayan">
+                    <option>Puskesmas Bayan</option>
+                    <option>Puskesmas Senaru</option>
+                  </optgroup>
+                </select>
+                <span class="select-arrow">
+                  <svg viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="reg-password">Kata Sandi</label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg viewBox="0 0 20 20" fill="none"><rect x="4" y="9" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 9V6a3 3 0 116 0v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <input type="password" id="reg-password" placeholder="Min. 8 karakter" required />
+                <button type="button" class="toggle-pass" data-target="reg-password" aria-label="Tampilkan kata sandi">
+                  <svg class="eye-show" viewBox="0 0 20 20" fill="none"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                  <svg class="eye-hide" viewBox="0 0 20 20" fill="none" style="display:none"><path d="M3 3l14 14M8.5 8.5A2.5 2.5 0 0112 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 10s3.5-6 9-6c1.5 0 2.9.4 4 1M19 10s-1.5 2.5-4 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+              <div class="pass-strength" id="pass-strength">
+                <div class="strength-bars">
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+                <span class="strength-label" id="strength-label">Kekuatan kata sandi</span>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="reg-confirm">Konfirmasi Kata Sandi</label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg viewBox="0 0 20 20" fill="none"><rect x="4" y="9" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 9V6a3 3 0 116 0v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <input type="password" id="reg-confirm" placeholder="Ulangi kata sandi" required />
+              </div>
+              <span class="field-error" id="reg-confirm-err"></span>
+            </div>
+
+            <label class="checkbox-label checkbox-label--terms">
+              <input type="checkbox" id="agree-terms" required />
+              <span class="checkmark"></span>
+              Saya menyetujui <a href="#" class="link-text">Syarat &amp; Ketentuan</a> serta <a href="#" class="link-text">Kebijakan Privasi</a> MTH
+            </label>
+
+            <button type="submit" class="btn-primary">
+              <span class="btn-text">Buat Akun</span>
+              <span class="btn-loader" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <p class="form-footer-text">Sudah punya akun? <a href="#" class="link-text" data-switch="login">Masuk di sini</a></p>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toast-msg"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
